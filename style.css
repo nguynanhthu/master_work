@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .logo i{
+    font-size: 30px;
+    margin-top: 3px;
+    margin-right: 5px;
+    color: #dc4f72;
+}
+
+header .logo h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: #dc4f72;
+}
+
+header ul.menu li a{
+    color: gray;
+}
+
+header .navbar{
+    box-shadow: 0 1px 15px gray;
+}
+
+.menu li{
+    font-size: 17px;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.menu li::after{
+    content: "";
+    background-color: #dc4f72;
+    width: 0;
+    height: 2px;
+    display: block;
+    transition: all 0.5s;
+}
+
+/* .menu li.active::after{
+    width: 40%;
+} */
+
+.menu li:hover::after{
+    width: 40%;
+}
+
+.menu button{
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 0 20px;
+    background-color: transparent;
+    border: 1px solid #dc4f72;
+    color: #dc4f72;
+    font-weight: 600;
+}
+
+.menu button:hover{
+    background-color: #dc4f72;
+    border: 1px solid #dc4f72;
+    color: white;
+    transition: 0.8s;
+}
+
+/* CONTENT */
+
+.content{
+    /* margin: 100px 0; */
+    background-image: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(./img/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content h1{
+    font-size: 50px;
+    color: #2c3038;
+    font-weight: 700;
+}
+
+.content p{
+    font-size: 20px;
+    color: #454545;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.content button{
+    padding: 20px 40px;
+    border-radius: 5px;
+    border: 1px solid #dc4f72;
+    color: #dc4f72;
+    background-color: white;
+    font-weight: 600;
+}
+
+.content button:hover{
+    color: white;
+    border: 1px solid #dc4f72;
+    background-color: #dc4f72;
+    transition: 0.8s;
+}
+
+.content img{
+    transform: rotate(180deg);
+}
+
+.row{
+    align-items: center;
+}
+
+/* WHY */
+.why__wrapper{
+    text-align: center;
+}
+
+.why__wrapper span{
+    color: #dc4f72;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.why__wrapper h1{
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.why__wrapper p{
+    font-size: 15px;
+}
+
+.why__content{
+    margin: 100px 0;
+}
+
+.im__why{
+    text-align: center;
+    background-color: #f7f9fc;
+    padding: 40px 30px;
+}
+
+.im__why:hover{
+    transform: translateY(-10px);
+    box-shadow:0 1px 10px gray;
+    background-color: white;
+    border: 1px solid #eee;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.im__why h3{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.im__why p{
+    color: #454545;
+}
+
+.thumnail_post img{
+    width: 60px;
+}
+
+/* ABOUT */
+
+.about{
+    text-align: left;
+    margin-bottom: 100px;
+    background-color: #f7f9fc;
+}
+
+.about h1{
+    font-size: 18px;
+    color: #dc4f72;
+}
+
+.about p{
+    color: #5f5d5d;
+    margin: 80px 0;
+}
+
+.about button{
+    padding: 15px 30px;
+    font-weight: 600;
+    color: white;
+    background-color: #dc4f72;
+    border: none;
+    border-radius: 5px;
+}
+
+.about button:hover{
+    background-color: #d62f58;
+    transition: 0.5s;
+}
+
+.about img{
+    width: 80%;
+    float: right;
+    border-radius: 5px;
+}
+
+.about img:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+/* COUNTER */
+
+.counter{
+    background-color: #f7f9fc;
+}
+
+.counter__list{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.counter__item{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgb(196, 195, 195);
+    margin: 20px;
+    padding: 30px 50px;
+}
+
+.counter__item:hover{
+    box-shadow: 0 5px 15px gray;
+    transition: 0.5s;
+}
+
+.counter__item h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.counter__item span{
+    font-size: 40px;
+    color: #dc4f72;
+    font-weight: 700;
+}
+
+.counter__item p{
+    color: #5f5d5d;
+    font-size: 15px;
+}
+
+/* INTRODUCE */
+
+.introduce{
+    background-image: linear-gradient(to right, rgb(9 9 9 / 70%), rgba(0, 0, 0, 0.33)) ,url(./img/bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.introduce__title h1{
+    font-size: 30px;
+}
+
+.col-6{
+    margin: 120px 0;
+}
+
+.introduce__title h1{
+    font-size: 30px;
+    color: white;
+}
+
+.introduce__title p{
+    font-size: 15px;
+    color: white;
+    margin: 30px 0;
+}
+
+.introduce__button button{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+}
+
+.introduce__button button:hover{
+    background-color: #e2e6ea;
+    transition: 0.5s;
+}
