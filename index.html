@@ -30,13 +30,19 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- slick-slider -->
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./libs/slick-1.8.1/slick/slick-theme.css">
+
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Bài của bé Thư -->
     <!-- HEADER -->
     <header>
-      <div class="container">
+      <div class="container ">
         <nav class="navbar navbar-expand-md bg-white fixed-top">
           <!-- Brand -->
           <a
@@ -603,13 +609,29 @@
           nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
         </p>
       </div>
-      <div class="testimontial__body">
-        <div class="row">
+      
+      <div class="testimontial__body container">
+        <div class="slider__content">
 
-          <div class="col-md-6  testimontial__item-list" >
-            <div class=" testimontial__item">
+          <div class="testimontial__item-list" >
+            <div class="testimontial__item ">
               <div class="testimontial__item-img">
-                <img src="./img/team3.jpg" alt="">
+                <img  src="./img/team3.jpg" alt="">
+              </div>
+              <div class=" testimontial__item-content ">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.
+                </p>
+                <h4>Isabella Mia</h4>
+                <span>Company name</span>
+              </div> 
+            </div>
+          </div>
+
+          <div class="testimontial__item-list" >
+            <div class="testimontial__item">
+              <div class="testimontial__item-img">
+                <img  src="./img/team4.jpg" alt="">
               </div>
               <div class=" testimontial__item-content">
                 <p>
@@ -621,10 +643,25 @@
             </div>
           </div>
 
-          <div class="col-md-6  testimontial__item-list" >
+          <div class="testimontial__item-list" >
+            <div class="testimontial__item">
+              <div class="testimontial__item-img">
+                <img style="height: 100%;" src="./img/team5.jpg" alt="">
+              </div>
+              <div class=" testimontial__item-content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda corporis deleniti praesentium doloremque. Repellendus soluta quos nemo quisquam consectetur temporibus quam obcaecati sapiente quaerat et.
+                </p>
+                <h4>Isabella Mia</h4>
+                <span>Company name</span>
+              </div> 
+            </div>
+          </div>
+
+          <div class="testimontial__item-list" >
             <div class=" testimontial__item">
               <div class="testimontial__item-img">
-                <img src="./img/team4.jpg" alt="">
+                <img style="height: 100%;" src="./img/team6.jpg" alt="">
               </div>
               <div class=" testimontial__item-content">
                 <p>
@@ -638,6 +675,7 @@
 
         </div>
       </div>
+      
     </div>
   </div>
 
@@ -762,6 +800,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!--  -->
     <script src="./libs/countup/jquery.countup.js"></script>
     <script>
       $(".counter__number").countUp();
@@ -781,5 +820,47 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- ----------------------------------------------- -->
+    <!-- slick-slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./libs/slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+      $('.slider__content').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+  ]
+});
+		
+    </script>
+    <!-- ----------------------------------------------- -->
+
   </body>
 </html>
