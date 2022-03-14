@@ -779,3 +779,30 @@ header .navbar {
 .footer__item li:hover{
   color: #dc4f72;
 }
+.nav-tabs .active,
+.nav-tabs .active:active{
+  color: #dc4f72 !important;
+}
+.nav-tabs .active::after{
+  content: "";
+  border-bottom: 3px solid #dc4f72;
+  width: 100%;
+  z-index: 10000;
+
+  position: absolute;
+  top: calc(100% - 0.5px);
+  left: 0%;
+
+  display: flex;
+  float: bottom;
+  flex-direction: column;
+}
+.nav-tabs .nav-link{
+  border: none !important;
+}
+.project__body-list::after{
+  content: "";
+  color: black;
+  border-bottom: 3px solid gray;
+  width: 100%;
+}
