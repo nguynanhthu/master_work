@@ -534,7 +534,7 @@ header .navbar {
 	width: 90%;
 	margin: auto;
 	border-radius: 10px;
-	transition: all 1s;
+	transition: all 0.3s;
 	transform: translateY(0);
 }
 .project-img img:hover {
