@@ -3,6 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+body{
+	font-family: 'Nunito', sans-serif;
+}
 /* @media screen and (min-width: 320px) and (max-width: 860px)
 {
   
@@ -22,11 +28,12 @@ header .logo h1 {
 }
 
 header ul.menu li a {
-	color: gray;
+	color: #4e4e4e;
+	margin-top: 5px;
 }
 
 header .navbar {
-	box-shadow: 0 1px 15px gray;
+	box-shadow: 0 1px 5px #d1d7df;
 }
 
 .menu li {
@@ -53,13 +60,14 @@ header .navbar {
 }
 
 .menu button {
-	padding: 15px 30px;
-	border-radius: 10px;
+	padding: 15px 20px;
+	border-radius: 5px;
 	margin: 0 20px;
 	background-color: transparent;
 	border: 1px solid #dc4f72;
 	color: #dc4f72;
-	font-weight: 600;
+	font-weight: 620;
+	font-size: 15px;
 }
 
 .menu button:hover {
@@ -90,16 +98,17 @@ header .navbar {
 	font-size: 20px;
 	color: #454545;
 	font-weight: 300;
-	margin: 20px 0;
+	margin: 30px 0;
 }
 
 .content button {
-	padding: 20px 40px;
+	padding: 15px 30px;
 	border-radius: 5px;
 	border: 1px solid #dc4f72;
 	color: #dc4f72;
 	background-color: white;
-	font-weight: 600;
+	font-weight: 700;
+	font-size: 15px;
 }
 
 .content button:hover {
@@ -124,13 +133,14 @@ header .navbar {
 
 .why__wrapper span {
 	color: #dc4f72;
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 15px;
+	font-weight: 650;
 }
 
 .why__wrapper h1 {
 	font-size: 50px;
 	margin: 10px 0;
+	font-weight: 650;
 }
 
 .why__wrapper p {
@@ -139,6 +149,10 @@ header .navbar {
 
 .why__content {
 	margin: 100px 0;
+}
+
+.content__why h3{
+	font-weight: 650;
 }
 
 .im__why {
@@ -150,7 +164,7 @@ header .navbar {
 
 .im__why:hover {
 	transform: translateY(-10px);
-	box-shadow: 0 1px 10px gray;
+	box-shadow: 0 1px 15px #c2c4c7;
 	background-color: white;
 	/* border: 1px solid #eee; */
 	transition: 0.8s;
@@ -183,9 +197,16 @@ header .navbar {
 	color: #dc4f72;
 }
 
+.about h3{
+	font-size: 40px;
+	color:black;
+	font-weight: 650;
+	color:#2c3038;
+}
+
 .about p {
 	color: #5f5d5d;
-	margin: 80px 0;
+	margin: 30px 0;
 }
 
 .about button {
@@ -203,7 +224,7 @@ header .navbar {
 }
 
 .about img {
-	width: 80%;
+	width: 95%;
 	float: right;
 	border-radius: 5px;
 }
@@ -501,6 +522,7 @@ header .navbar {
 	font-size: 30px;
 	line-height: 36px;
 	color: #2c3038;
+	font-weight: 650;
 }
 .project__body-content p {
 	color: #5a5a5a;
@@ -518,8 +540,8 @@ header .navbar {
 	color: #dc4f72;
 	border: 1px solid #dc4f72;
 	margin-top: 16px;
-	border-radius: 10px;
-	font-weight: 600;
+	border-radius: 5px;
+	font-weight: 650;
 	transition: all 0.5s;
 }
 .project__body-content a:hover {
@@ -574,9 +596,10 @@ header .navbar {
 	border-radius: 50%;
 	border: 3px #dc4f72 solid;
 	background-color: black;
-	display: inline-block;
+	/* display: inline-block; */
 	/* margin-bottom: 140px; */
 	margin-right: 30px;
+	float: left;
 }
 
 .testimontial__item .testimontial__item-img img {
@@ -644,6 +667,9 @@ header .navbar {
 }
 .build-btn {
 	margin-top: 48px;
+}
+#build h3{
+	font-weight: 650;
 }
 .build-btn button {
 	display: inline-block;
